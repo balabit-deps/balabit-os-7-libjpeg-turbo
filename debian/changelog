@@ -1,3 +1,18 @@
+libjpeg-turbo (1.5.2-0ubuntu5.18.04.3) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-14498.patch: Fix OOB read
+      caused by malformed 8-bit BMP in cderror.h, rdbmp.c, rdppm.c.
+    - CVE-2018-14498
+  * SECURITY UPDATE: Several integer overflow and subsequent
+    segfaults
+    - debian/patches/CVE-2019-2201.patch: properly handled
+      gigapixel images in java/TJBench.java, tjbench.c,
+      turbojpeg.c.
+    - CVE-2019-2201
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Tue, 12 Nov 2019 10:09:57 -0300
+
 libjpeg-turbo (1.5.2-0ubuntu5.18.04.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: NULL pointer dereference via JPEG image
